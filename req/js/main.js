@@ -71,7 +71,7 @@
   function applyTheme(t, persist) {
     document.documentElement.setAttribute('data-theme', t);
     if (persist) { try { localStorage.setItem('theme', t); } catch (e) {} }
-    if (themeMeta) themeMeta.setAttribute('content', t === 'light' ? '#f2f5f2' : '#08090b');
+    if (themeMeta) themeMeta.setAttribute('content', t === 'light' ? '#f4f7fb' : '#07090e');
     if (themeBtn) themeBtn.setAttribute('aria-label', t === 'light' ? 'Switch to dark theme' : 'Switch to light theme');
     window.dispatchEvent(new CustomEvent('themechange'));
   }
@@ -354,8 +354,8 @@
     ];
     function palette() {
       return document.documentElement.getAttribute('data-theme') === 'light'
-        ? { star: '13,18,16', acc: '13,122,78', dim: 0.8 }
-        : { star: '244,246,248', acc: '62,207,142', dim: 1 };
+        ? { star: '11,28,55', acc: '2,132,199', dim: 0.8 }
+        : { star: '240,244,249', acc: '0,180,216', dim: 1 };
     }
     var PAL = palette();
     window.addEventListener('themechange', function () {
@@ -381,7 +381,7 @@
           a: 0.1 + Math.random() * (deep ? 0.2 : 0.3),
           tw: 0.35 + Math.random() * 1.15,
           ph: Math.random() * 6.283,
-          green: Math.random() < 0.12,
+          blue: Math.random() < 0.12,
           deep: deep
         });
       }
@@ -437,7 +437,7 @@
         if (animate) al *= 0.7 + 0.3 * Math.sin(s.ph + t * s.tw * 3.2);
         var px = s.x + ox * (s.deep ? 4 : 9);
         var py = s.y + oy * (s.deep ? 3 : 6);
-        ctx.fillStyle = 'rgba(' + (s.green ? PAL.acc : PAL.star) + ',' + (al * dim).toFixed(3) + ')';
+        ctx.fillStyle = 'rgba(' + (s.blue ? PAL.acc : PAL.star) + ',' + (al * dim).toFixed(3) + ')';
         ctx.beginPath(); ctx.arc(px, py, s.r, 0, 6.2832); ctx.fill();
       }
 
