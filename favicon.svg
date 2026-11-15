@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
   <defs>
     <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#5ff0ab" />
-      <stop offset="100%" stop-color="#1f8f63" />
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
     </linearGradient>
   </defs>
-  <rect width="64" height="64" rx="16" fill="#08090b" />
+  <rect width="64" height="64" rx="16" fill="#07090e" />
   <rect x="2" y="2" width="60" height="60" rx="14" fill="none" stroke="url(#g)" stroke-width="2" opacity="0.6" />
   <text x="32" y="41" font-family="'JetBrains Mono', monospace" font-size="24" font-weight="700" fill="url(#g)" text-anchor="middle" letter-spacing="-1">YR</text>
 </svg>
