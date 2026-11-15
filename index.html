@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yuvrajsinh Raj | DevOps & Support Engineer</title>
+<meta name="description"
+content="DevOps & Support Engineer specializing in Linux/Windows server management, AWS, Docker, SSL, DNS, email services, and server monitoring. Building reliable infrastructure from scratch.">
+<meta name="keywords"
+content="Yuvrajsinh Raj, DevOps Engineer, Support Engineer, AWS EC2, AWS Lightsail, Docker, SSL, DNS, Server Monitoring, Linux, Windows Server, Laravel, PHP, Cisco CCNA, Barodaweb, Gujarat">
+<meta name="author" content="Yuvrajsinh Raj">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#f2f5f2">
+<script>
+(function () {
+  var t = null;
+  try { t = localStorage.getItem('theme'); } catch (e) {}
+  if (t !== 'light' && t !== 'dark') t = 'light';
+  document.documentElement.setAttribute('data-theme', t);
+})();
+</script>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Yuvrajsinh Raj | DevOps & Support Engineer">
+<meta property="og:description" content="DevOps & Support Engineer specializing in server management, AWS, Docker, and monitoring systems">
+<meta property="og:locale" content="en_US">
+
+<link rel="icon" href="req/img/fav/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=JetBrains+Mono:wght@100..800&display=swap" as="style">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=JetBrains+Mono:wght@100..800&display=swap">
+<link rel="stylesheet" href="req/css/styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Yuvrajsinh Raj",
+  "jobTitle": "DevOps & Support Engineer",
+  "email": "mailto:yuvrajsinhjiraj@gmail.com",
+  "telephone": "+919773168525",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Vadodara",
+    "addressRegion": "Gujarat",
+    "addressCountry": "IN"
+  },
+  "alumniOf": "Gujarat Technological University",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Barodaweb"
+  },
+  "knowsAbout": [
+    "DevOps", "AWS EC2", "AWS Lightsail", "Docker", "RabbitMQ", "MongoDB",
+    "Linux Server Administration", "Windows Server Administration",
+    "Server Monitoring", "SSL Certificates", "DNS Management",
+    "Cisco CCNA", "Network Troubleshooting", "Laravel", "PHP", "MySQL"
+  ]
+}
+</script>
+</head>
+<body class="is-loading">
+
+<!-- Preloader · CI/CD deploy sequence -->
+<div class="preloader" id="preloader" role="status" aria-live="polite" aria-label="Loading">
+  <div class="preloader__glow"></div>
+  <div class="preloader__scan"></div>
+  <div class="boot">
+    <div class="boot__cmd"><span class="prompt">yuvraj@prod</span> <span>:~$ deploy --env production --portfolio</span> <span class="caret"></span></div>
+
+    <div class="pipeline" aria-hidden="true">
+      <div class="pipeline__track"><span class="pipeline__fill"></span></div>
+
+      <div class="stage" data-stage="build">
+        <div class="stage__dot">
+          <svg class="default" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 3-6 9 6 9M16 3l6 9-6 9M14 3l-4 18"/></svg>
+          <span class="spin"></span>
+          <svg class="stage__check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+        </div>
+        <span class="stage__label">Build</span>
+      </div>
+
+      <div class="stage" data-stage="test">
+        <div class="stage__dot">
+          <svg class="default" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3v6l-5 9a2 2 0 0 0 1.8 3h12.4A2 2 0 0 0 20 18l-5-9V3M8 3h8M8 14h8"/></svg>
+          <span class="spin"></span>
+          <svg class="stage__check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+        </div>
+        <span class="stage__label">Test</span>
+      </div>
+
+      <div class="stage" data-stage="deploy">
+        <div class="stage__dot">
+          <svg class="default" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m4.5 16.5 3 3M9 15l-4.5 1.5M14 6l4 4M12.5 2.5 6 9l-2 5 5-2 6.5-6.5a3.5 3.5 0 0 0-3-3z"/><path d="M15 9a3.5 3.5 0 0 0-3-3"/></svg>
+          <span class="spin"></span>
+          <svg class="stage__check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+        </div>
+        <span class="stage__label">Deploy</span>
+      </div>
+
+      <div class="stage" data-stage="release">
+        <div class="stage__dot">
+          <svg class="default" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 7v10l9 5 9-5V7z"/><path d="m3 7 9 5 9-5M12 12v10"/></svg>
+          <span class="spin"></span>
+          <svg class="stage__check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+        </div>
+        <span class="stage__label">Release</span>
+      </div>
+    </div>
+
+    <div class="boot__foot">
+      <div class="boot__status"><span class="text-muted">›</span> initializing build environment<span class="text-muted">…</span></div>
+      <div class="boot__pct"><span class="n tnum">0</span><span class="s">%</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- Ambient backdrop -->
+<div class="backdrop" aria-hidden="true">
+  <div class="backdrop__grid"></div>
+  <div class="backdrop__glow"></div>
+  <div class="backdrop__grain"></div>
+</div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- Navigation -->
+<header class="site-header" id="siteHeader">
+  <nav class="nav" id="nav" aria-label="Primary">
+    <a class="brand" href="#hero" aria-label="Yuvrajsinh Raj — home">
+      <span class="brand__mark">YR</span>
+      <span class="brand__name">Yuvrajsinh&nbsp;Raj <span class="role">— DevOps Engineer</span></span>
+    </a>
+    <div class="nav__links" id="navLinks">
+      <a class="nav__link is-active" href="#hero">Home</a>
+      <a class="nav__link" href="#about">About</a>
+      <a class="nav__link" href="#work">Work</a>
+      <a class="nav__link" href="#stack">Stack</a>
+      <a class="nav__link" href="#credentials">Proof</a>
+      <a class="nav__link" href="#contact">Contact</a>
+    </div>
+    <div class="nav__right">
+      <span class="nav__status" title="Local time · Vadodara (IST)">
+        <span class="live"></span>available
+        <span class="clock tnum" data-clock>00:00:00</span>
+      </span>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light theme" data-cursor="theme">
+        <svg class="tt-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="tt-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <a class="btn btn--primary nav__cta magnetic" href="#contact" data-cursor="connect">Let's talk</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- Hero -->
+<section class="hero" id="hero">
+  <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+
+  <div class="container">
+    <div class="hero__grid">
+      <div class="hero__intro">
+        <span class="eyebrow hero__eyebrow">DevOps &amp; Support Engineer <span class="reg">&nbsp;· Vadodara, India</span></span>
+
+        <h1 class="hero__title" aria-label="Yuvrajsinh Raj">
+          <span class="line line--fill"><span data-decode="YUVRAJSINH">YUVRAJSINH</span></span>
+          <span class="line line--grad"><span data-decode="RAJ">RAJ</span><span class="blink" aria-hidden="true"></span></span>
+        </h1>
+
+        <p class="lead hero__lead">
+          I build and manage
+          <span class="em">reliable hosting infrastructure</span> from scratch — servers, monitoring, and automated alerts teams can count on.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary btn--lg magnetic" href="#contact" data-cursor="connect">
+            Let's connect
+            <svg class="btn__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn--ghost btn--lg" href="#work" data-cursor="open">
+            <svg class="btn__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+            View the work
+          </a>
+          <a class="btn btn--ghost btn--lg" href="req/Yuvrajsinh_CV.pdf" target="_blank" rel="noopener" download="Yuvrajsinh_CV.pdf" data-cursor="cv">
+            <svg class="btn__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            Download CV
+          </a>
+        </div>
+
+        <div class="status-strip" aria-label="Status">
+          <div class="stat">
+            <span class="stat__k">status</span>
+            <span class="stat__v live"><span class="dot"></span>operational</span>
+          </div>
+          <div class="stat">
+            <span class="stat__k">region</span>
+            <span class="stat__v">Vadodara · India</span>
+          </div>
+          <div class="stat">
+            <span class="stat__k">since</span>
+            <span class="stat__v">2023 · 2y+ uptime</span>
+          </div>
+          <div class="stat">
+            <span class="stat__k">local</span>
+            <span class="stat__v tnum" data-clock>00:00:00</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Git graph -->
+      <div class="hero__graph" aria-hidden="true">
+        <svg class="git" viewBox="0 0 420 560" fill="none">
+          <path class="g-line g-main"   d="M150 20 V 540" pathLength="1"/>
+          <path class="g-line g-branch" d="M150 120 C 150 168, 300 156, 300 204 V 356 C 300 404, 150 392, 150 440" pathLength="1"/>
+          <path class="g-flow" d="M150 120 C 150 168, 300 156, 300 204 V 356 C 300 404, 150 392, 150 440" pathLength="1"/>
+
+          <g class="g-commit" data-cursor="c0ffee1">
+            <circle class="g-hit" cx="150" cy="60" r="22"/>
+            <circle class="g-c g-c--main d1" cx="150" cy="60"  r="7" />
+            <text class="g-t g-t--dim d1" x="130" y="64"  text-anchor="end">main</text>
+          </g>
+          <g class="g-commit" data-cursor="fea7s3r">
+            <circle class="g-hit" cx="150" cy="120" r="22"/>
+            <circle class="g-c g-c--acc  d2" cx="150" cy="120" r="7" />
+            <text class="g-t d2" x="130" y="124" text-anchor="end">checkout -b feat/monitor</text>
+          </g>
+          <g class="g-commit" data-cursor="add5srv">
+            <circle class="g-hit" cx="300" cy="240" r="22"/>
+            <circle class="g-c g-c--acc  d3" cx="300" cy="240" r="7" />
+            <text class="g-t d3" x="320" y="244">+ monitoring.yml</text>
+          </g>
+          <g class="g-commit" data-cursor="5ecc0de">
+            <circle class="g-hit" cx="300" cy="320" r="22"/>
+            <circle class="g-c g-c--acc  d4" cx="300" cy="320" r="7" />
+            <text class="g-t g-t--acc d4" x="320" y="324">checks ✓ uptime</text>
+          </g>
+          <g class="g-commit" data-cursor="d3pl0y1">
+            <circle class="g-hit" cx="150" cy="440" r="22"/>
+            <circle class="g-c g-c--acc  d5" cx="150" cy="440" r="7" />
+            <text class="g-t d5" x="130" y="444" text-anchor="end">merge → main</text>
+          </g>
+
+          <g class="g-commit g-head" data-cursor="HEAD → v1.0">
+            <circle class="g-hit" cx="150" cy="505" r="26"/>
+            <circle class="g-c g-c--acc  d5" cx="150" cy="505" r="8" />
+            <circle class="g-ring" cx="150" cy="505" r="9" />
+            <g class="g-tag">
+              <g class="g-tag__in">
+                <rect x="174" y="491" width="142" height="28" rx="14"/>
+                <text x="245" y="509" text-anchor="middle">v1.0 · deployed</text>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <a class="scroll-cue" href="#about" aria-label="Scroll down" data-cursor="scroll">
+    <span class="txt">scroll</span>
+    <span class="rail"></span>
+  </a>
+</section>
+
+
+<!-- Marquee bridge -->
+<div class="marquee" aria-label="DevOps ecosystem">
+  <div class="marquee__track" id="marqueeTrack">
+    <span class="marquee__item"><span class="d"></span>Linux Servers</span>
+    <span class="marquee__item"><span class="d"></span>Windows Servers</span>
+    <span class="marquee__item"><span class="d"></span>AWS EC2</span>
+    <span class="marquee__item"><span class="d"></span>AWS Lightsail</span>
+    <span class="marquee__item"><span class="d"></span>Docker</span>
+    <span class="marquee__item"><span class="d"></span>RabbitMQ</span>
+    <span class="marquee__item"><span class="d"></span>MongoDB</span>
+    <span class="marquee__item"><span class="d"></span>SSL Installation</span>
+    <span class="marquee__item"><span class="d"></span>DNS Management</span>
+    <span class="marquee__item"><span class="d"></span>Email Services</span>
+    <span class="marquee__item"><span class="d"></span>Server Monitoring</span>
+    <span class="marquee__item"><span class="d"></span>WordPress</span>
+    <span class="marquee__item"><span class="d"></span>Laravel</span>
+    <span class="marquee__item"><span class="d"></span>PHP</span>
+    <span class="marquee__item"><span class="d"></span>MySQL</span>
+    <span class="marquee__item"><span class="d"></span>Cisco CCNA</span>
+    <span class="marquee__item"><span class="d"></span>Network Troubleshooting</span>
+    <span class="marquee__item"><span class="d"></span>Google Workspace</span>
+    <span class="marquee__item"><span class="d"></span>Microsoft Office 365</span>
+    <span class="marquee__item"><span class="d"></span>Uptime Monitoring</span>
+    <span class="marquee__item"><span class="d"></span>SSL Expiry Tracking</span>
+    <span class="marquee__item"><span class="d"></span>Domain Management</span>
+    <span class="marquee__item"><span class="d"></span>Routers & Switches</span>
+    <span class="marquee__item"><span class="d"></span>Firewalls</span>
+    <span class="marquee__item"><span class="d"></span>Support Tickets</span>
+    <span class="marquee__item"><span class="d"></span>HTML & CSS</span>
+    <span class="marquee__item"><span class="d"></span>Security Updates</span>
+    <span class="marquee__item"><span class="d"></span>Server Troubleshooting</span>
+  </div>
+</div>
+
+
+<!-- 01 · whoami -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="about__grid">
+
+      <!-- identity card -->
+      <aside class="idcard" data-reveal="left">
+        <div class="idcard__head">
+          <span>identity.card</span>
+          <span class="on">verified</span>
+        </div>
+        <div class="idcard__photo">
+          <img src="req/img/profile.jpg" alt="Yuvrajsinh Raj" width="600" height="600" loading="lazy">
+          <span class="idcard__scan"></span>
+        </div>
+        <div class="idcard__meta">
+          <div class="idcard__row"><span class="k">uid</span><span class="v">yuvrajsinhraj</span></div>
+          <div class="idcard__row"><span class="k">role</span><span class="v">devops & support engineer</span></div>
+          <div class="idcard__row"><span class="k">base</span><span class="v">22.3072° N · 73.1812° E</span></div>
+          <div class="idcard__row"><span class="k">tz</span><span class="v">IST · UTC+05:30</span></div>
+          <div class="idcard__row"><span class="k">exp</span><span class="v">2y+ · since 2023</span></div>
+          <div class="idcard__row"><span class="k">status</span><span class="v acc">● open to opportunities</span></div>
+        </div>
+      </aside>
+
+      <!-- manifesto -->
+      <div class="about__body">
+        <div class="section-head">
+          <span class="eyebrow" data-reveal><span class="idx">01</span> — whoami</span>
+          <h2 data-reveal>Uptime is a feature.<br>I build it in.</h2>
+        </div>
+        <p class="lead-big" data-reveal>
+          Servers that just run, alerts that never miss:
+          <span class="dim">infrastructure you can sleep on.</span>
+        </p>
+        <p data-reveal>
+          I set up and manage <span class="hl">Linux and Windows hosting servers from scratch</span>
+          — handling AWS (EC2, Lightsail), Docker environments, paid SSL installation,
+          DNS configuration, email services, and server troubleshooting.
+        </p>        
+        <p data-reveal>
+          The throughline: <span class="hl">proactive monitoring, uptime reliability,
+          and automated alerts.</span> Built an in-house monitoring system with email alerts
+          for server/website downtime, domain &amp; SSL expiry, plus a centralised log panel for developers.
+        </p>
+
+        <div class="ops-principles" data-stagger>
+          <article class="principle">
+            <span class="principle__n">01</span>
+            <h3>Server reliability</h3>
+            <p>Build servers from scratch with proper configuration, security hardening, and maintenance schedules.</p>
+          </article>
+          <article class="principle">
+            <span class="principle__n">02</span>
+            <h3>Monitor everything</h3>
+            <p>Track uptime, SSL expiry, and domain renewals — automated alerts mean nothing gets missed.</p>
+          </article>
+          <article class="principle">
+            <span class="principle__n">03</span>
+            <h3>Resolve fast</h3>
+            <p>Troubleshoot server issues, network problems, and client hosting requests with minimal downtime.</p>
+          </article>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- 02 · Work — release log -->
+<section class="section" id="work">
+  <div class="container">
+
+    <div class="section-head">
+      <span class="eyebrow" data-reveal>
+        <span class="idx">02</span> — git log --career
+      </span>
+      <h2 data-reveal>Deployment history.</h2>
+    </div>
+
+    <div class="timeline" data-reveal>
+
+      <!-- Barodaweb -->
+      <article class="release" data-reveal>
+        <div class="release__aside">
+          <span class="release__tag">release/2025.01 — HEAD</span>
+          <h3 class="release__co">Barodaweb</h3>
+          <p class="release__period">Jan 2025 → present</p>
+        </div>
+
+        <div class="release__main">
+
+          <h4 class="release__role">
+            DevOps &amp; Support Engineer
+            <span class="now">now</span>
+          </h4>
+          <p style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent); margin-bottom: 0.8rem; font-style: italic;">› Joined as Intern Network &amp; Support Engineer</p>
+
+          <p class="release__sum">
+            Managing <span class="hl">complete server infrastructure from scratch</span> —
+            Linux & Windows servers on AWS (EC2, Lightsail), Docker environments with RabbitMQ
+            and MongoDB, paid SSL certificates, DNS, email services, and a custom-built
+            monitoring system for downtime alerts and SSL expiry tracking.
+          </p>
+
+          <div class="release__chips" data-stagger>
+            <span class="kchip"><span class="d"></span>AWS EC2 &amp; Lightsail</span>
+            <span class="kchip"><span class="d"></span>Docker</span>
+            <span class="kchip"><span class="d"></span>RabbitMQ</span>
+            <span class="kchip"><span class="d"></span>MongoDB</span>
+            <span class="kchip"><span class="d"></span>Server Monitoring</span>
+            <span class="kchip"><span class="d"></span>Paid SSL</span>
+            <span class="kchip"><span class="d"></span>DNS &amp; Email</span>
+            <span class="kchip"><span class="d"></span>WordPress &amp; Laravel</span>
+          </div>
+
+        </div>
+      </article>
+
+      <!-- UPL -->
+      <article class="release release--past" data-reveal>
+        <div class="release__aside">
+          <span class="release__tag">release/2023.05</span>
+          <h3 class="release__co">UPL</h3>
+          <p class="release__period">May 2023 → Jul 2023 · 3m</p>
+        </div>
+
+        <div class="release__main">
+
+          <h4 class="release__role">
+            Network Support Engineer
+          </h4>
+
+          <p class="release__sum">
+            Hands-on experience with <span class="hl">physical network infrastructure</span> —
+            configuring servers, routers, switches, modems, firewalls, and CCTV systems.
+            Provided system support, OS setup and installation, and monitored network operations
+            at the Halol, Gujarat facility.
+          </p>
+
+          <div class="release__chips" data-stagger>
+            <span class="kchip"><span class="d"></span>Network Configuration</span>
+            <span class="kchip"><span class="d"></span>Routers & Switches</span>
+            <span class="kchip"><span class="d"></span>Firewalls</span>
+            <span class="kchip"><span class="d"></span>System Support</span>
+            <span class="kchip"><span class="d"></span>OS Installation</span>
+            <span class="kchip"><span class="d"></span>Troubleshooting</span>
+          </div>
+
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Selected outcomes -->
+    <div class="impact-strip" data-reveal>
+
+      <span class="eyebrow">
+        <span class="idx">02a</span> — git diff --stat
+      </span>
+
+      <h3 class="impact-title">The work, diffed.</h3>
+
+      <p class="impact-sub">Key outcomes from managing infrastructure and support operations.</p>
+
+      <div class="impact-grid" data-stagger>
+
+        <article class="impact-stat">
+          <strong class="impact-stat__n">3<span>+</span></strong>
+          <span class="impact-stat__l">Projects built & deployed</span>
+        </article>
+
+        <article class="impact-stat">
+          <strong class="impact-stat__n">24<span>/7</span></strong>
+          <span class="impact-stat__l">Server monitoring uptime</span>
+        </article>
+
+        <article class="impact-stat">
+          <strong class="impact-stat__n">0<span>%</span></strong>
+          <span class="impact-stat__l">Missed SSL/domain renewals</span>
+        </article>
+
+        <article class="impact-stat">
+          <strong class="impact-stat__n">2<span>y+</span></strong>
+          <span class="impact-stat__l">Infrastructure experience</span>
+        </article>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- 03 · Stack — spec sheet -->
+<section class="section" id="stack">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow" data-reveal><span class="idx">03</span> — cat stack.yaml</span>
+      <h2 data-reveal>The toolchain, declared.</h2>
+    </div>
+
+    <div class="stack-stage" data-reveal>
+      <div class="stack-stage__copy">
+        <span class="stack-stage__label">production toolkit</span>
+        <p>Built through hands-on server management, networking, and web development across real production environments.</p>
+      </div>
+
+      <div class="stack-stage__surface">
+        <figure class="spec spec--peek">
+          <figcaption>
+            <span class="d"></span>
+            <span class="path">infra/</span>stack.yaml
+            <span class="path">· tracked · drift checked</span>
+            <span class="spec__hint">hover a card ↓</span>
+          </figcaption>
+          <span class="spec__scan" aria-hidden="true"></span>
+          <div class="spec__mask">
+            <pre data-stagger><span class="ln"><span class="no">1</span><span><span class="k">stack</span><span class="p">:</span></span></span><span class="ln"><span class="no">2</span><span>  <span class="k">cloud</span><span class="p">:</span>         <span class="p">[</span><span class="v">aws-ec2</span><span class="p">,</span> <span class="v">aws-lightsail</span><span class="p">]</span></span></span><span class="ln"><span class="no">3</span><span>  <span class="k">containers</span><span class="p">:</span>    <span class="p">[</span><span class="v">docker</span><span class="p">,</span> <span class="v">rabbitmq</span><span class="p">,</span> <span class="v">mongodb</span><span class="p">]</span></span></span><span class="ln"><span class="no">4</span><span>  <span class="k">servers</span><span class="p">:</span>       <span class="p">[</span><span class="v">linux</span><span class="p">,</span> <span class="v">windows-server</span><span class="p">,</span> <span class="v">wordpress</span><span class="p">,</span> <span class="v">laravel</span><span class="p">]</span></span></span><span class="ln"><span class="no">5</span><span>  <span class="k">security</span><span class="p">:</span>      <span class="p">[</span><span class="v">ssl-certificates</span><span class="p">,</span> <span class="v">firewalls</span><span class="p">,</span> <span class="v">security-updates</span><span class="p">]</span></span></span><span class="ln"><span class="no">6</span><span>  <span class="k">monitoring</span><span class="p">:</span>    <span class="p">[</span><span class="v">uptime-alerts</span><span class="p">,</span> <span class="v">ssl-expiry</span><span class="p">,</span> <span class="v">domain-tracking</span><span class="p">,</span> <span class="v">log-panel</span><span class="p">]</span></span></span><span class="ln"><span class="no">7</span><span>  <span class="k">networking</span><span class="p">:</span>    <span class="p">[</span><span class="v">dns</span><span class="p">,</span> <span class="v">routers</span><span class="p">,</span> <span class="v">switches</span><span class="p">,</span> <span class="v">firewalls</span><span class="p">,</span> <span class="v">ccna</span><span class="p">]</span></span></span><span class="ln"><span class="no">8</span><span>  <span class="k">web</span><span class="p">:</span>           <span class="p">[</span><span class="v">php</span><span class="p">,</span> <span class="v">laravel</span><span class="p">,</span> <span class="v">html</span><span class="p">,</span> <span class="v">css</span><span class="p">,</span> <span class="v">mysql</span><span class="p">]</span></span></span><span class="ln"><span class="no">9</span><span>  <span class="k">services</span><span class="p">:</span>      <span class="p">[</span><span class="v">email-services</span><span class="p">,</span> <span class="v">google-workspace</span><span class="p">,</span> <span class="v">office-365</span><span class="p">]</span></span></span><span class="ln"><span class="no">10</span><span></span></span><span class="ln"><span class="no">11</span><span><span class="k">mode</span><span class="p">:</span> <span class="v">monitor_everything</span>  <span class="c"># server reliability • uptime first • resolve fast</span><span class="cursor-line"></span></span></span></pre>
+          </div>
+        </figure>
+
+        <div class="stack-cards" data-stagger>
+          <article class="stack-card" data-keys="cloud,containers">
+            <span class="stack-card__k">infra</span>
+            <strong>Cloud & Containers</strong>
+            <p>AWS EC2, AWS Lightsail, Docker, RabbitMQ, MongoDB</p>
+          </article>
+        
+          <article class="stack-card" data-keys="servers,services">
+            <span class="stack-card__k">run</span>
+            <strong>Servers & Services</strong>
+            <p>Linux, Windows Server, WordPress, Laravel, Email, Google Workspace</p>
+          </article>
+        
+          <article class="stack-card" data-keys="security,monitoring">
+            <span class="stack-card__k">guard</span>
+            <strong>Security & Monitoring</strong>
+            <p>SSL Certs, Firewalls, Uptime Alerts, SSL Expiry, Domain Tracking</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 · Credentials -->
+<section class="section" id="credentials">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow" data-reveal><span class="idx">04</span> — ls -la credentials/</span>
+      <h2 data-reveal>Proof, not promises.</h2>
+    </div>
+
+    <div class="credgroup">
+      <div data-stagger>
+        <div class="crow">
+          <span class="crow__issuer">Cisco</span>
+          <span class="crow__name">CCNA — Cisco Certified Network Associate</span>
+          <span class="crow__dates">Certified</span>
+          <span class="crow__go">verified <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+        </div>
+        <div class="crow">
+          <span class="crow__issuer">Microsoft</span>
+          <span class="crow__name">Windows OS Installation</span>
+          <span class="crow__dates">Certified</span>
+          <span class="crow__go">verified <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+        </div>
+        <div class="crow">
+          <span class="crow__issuer">Google</span>
+          <span class="crow__name">Certification Course on Google Products (CCGP)</span>
+          <span class="crow__dates">Certified</span>
+          <span class="crow__go">verified <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="credgroup">
+      <div class="credgroup__label" data-reveal>projects</div>
+      <div class="awards3" data-stagger>
+        <article class="aw">
+          <div class="aw__year">2025</div>
+          <h3 class="aw__t">Server &amp; Website Monitoring System</h3>
+          <span class="aw__tag">barodaweb · production</span>
+          <p class="aw__d">Built an in-house monitoring system: email alerts for server/website downtime, domain and SSL expiry notifications with reminders, and a centralised panel for developers to view project logs.</p>
+        </article>
+        <article class="aw">
+          <div class="aw__year">2024</div>
+          <h3 class="aw__t">Employee Complaint Software</h3>
+          <span class="aw__tag">laravel · full-stack</span>
+          <p class="aw__d">Employee complaint software built using Laravel, HTML, CSS, and MySQL for streamlined internal issue tracking and ticket management.</p>
+        </article>
+        <article class="aw">
+          <div class="aw__year">2024</div>
+          <h3 class="aw__t">Gate Pass Management System</h3>
+          <span class="aw__tag">php · full-stack</span>
+          <p class="aw__d">Gate pass management system software developed using PHP, HTML, CSS, and MySQL for facility visitor security and pass approvals.</p>
+        </article>
+      </div>
+    </div>
+
+    <div class="credgroup" style="margin-bottom:0">
+      <div class="credgroup__label" data-reveal>education</div>
+      
+      <div class="edu" data-reveal style="margin-bottom: 0.75rem;">
+        <span class="edu__ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5zM6 12v5c0 1 2.7 2.5 6 2.5s6-1.5 6-2.5v-5M22 10v6"/></svg>
+        </span>
+        <div>
+          <div class="edu__deg">Master of Computer Applications</div>
+          <div class="edu__field">MCA · Sem 3 SGPA: 6.91</div>
+          <div class="edu__school">GTU, SVIT Vasad</div>
+        </div>
+        <span class="edu__years">2025</span>
+      </div>
+
+      <div class="edu" data-reveal style="margin-bottom: 0.75rem;">
+        <span class="edu__ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5zM6 12v5c0 1 2.7 2.5 6 2.5s6-1.5 6-2.5v-5M22 10v6"/></svg>
+        </span>
+        <div>
+          <div class="edu__deg">Bachelor of Computer Applications</div>
+          <div class="edu__field">BCA · 70%</div>
+          <div class="edu__school">VNSGU, MKICS Bharuch</div>
+        </div>
+        <span class="edu__years">2020 → 2023</span>
+      </div>
+
+      <div class="edu" data-reveal style="margin-bottom: 0.75rem;">
+        <span class="edu__ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5zM6 12v5c0 1 2.7 2.5 6 2.5s6-1.5 6-2.5v-5M22 10v6"/></svg>
+        </span>
+        <div>
+          <div class="edu__deg">Higher Secondary Certificate (H.S.C.)</div>
+          <div class="edu__field">GSHEB · 55.46%</div>
+          <div class="edu__school">Narayan Vidhya Vihar, Bharuch</div>
+        </div>
+        <span class="edu__years">2020</span>
+      </div>
+
+      <div class="edu" data-reveal>
+        <span class="edu__ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5zM6 12v5c0 1 2.7 2.5 6 2.5s6-1.5 6-2.5v-5M22 10v6"/></svg>
+        </span>
+        <div>
+          <div class="edu__deg">Secondary School Certificate (S.S.C.)</div>
+          <div class="edu__field">GSEB · 61.83%</div>
+          <div class="edu__school">Narayan Vidhya Vihar, Bharuch</div>
+        </div>
+        <span class="edu__years">2015</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 · Contact -->
+<section class="section contact" id="contact">
+  <div class="container">
+    <span class="eyebrow" data-reveal><span class="idx">05</span> — ping yuvraj</span>
+    <h2 class="contact__title" data-reveal>Ready to build<br><span class="grad">something reliable?</span></h2>
+    <p class="contact__sub" data-reveal>Let's talk about your server infrastructure, hosting needs, or how to make your systems more reliable and monitored.</p>
+
+    <div class="contact__actions" data-reveal>
+      <a class="btn btn--primary btn--lg magnetic" href="mailto:yuvrajsinhjiraj@gmail.com" data-cursor="send">
+        Email me
+        <svg class="btn__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="btn btn--ghost btn--lg" href="tel:+919773168525" data-cursor="call">
+        <svg class="btn__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call me
+      </a>
+      <a class="btn btn--ghost btn--lg" href="req/Yuvrajsinh_CV.pdf" target="_blank" rel="noopener" download="Yuvrajsinh_CV.pdf" data-cursor="cv">
+        <svg class="btn__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        Download CV
+      </a>
+    </div>
+
+    <div data-reveal>
+      <button class="copyline" id="copyEmail" data-copy="yuvrajsinhjiraj@gmail.com" data-cursor="copy" type="button" aria-live="polite">
+        <span class="p">$</span>
+        <span class="addr">echo yuvrajsinhjiraj@gmail.com | clip</span>
+        <span class="ok">✓ copied to clipboard</span>
+      </button>
+    </div>
+
+    <div class="contact__meta" data-reveal style="margin-top:2.2rem">
+      <span>base: Vadodara, Gujarat, IN</span>
+      <a href="https://www.google.com/maps?q=Vadodara,Gujarat,India" target="_blank" rel="noopener" data-cursor="map">22.3072° N · 73.1812° E ↗</a>
+      <span>phone: +91 9773168525</span>
+      <span>tz: IST · UTC+05:30</span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer__row">
+    <a class="footer__brand" href="#hero" data-cursor="top">
+      <span class="brand__mark">YR</span> Yuvrajsinh Raj
+    </a>
+    <span class="footer__mono">© 2026 · deployed from Vadodara · status: <span class="text-accent">operational</span></span>
+    <div class="footer__links">
+      <a href="mailto:yuvrajsinhjiraj@gmail.com" data-cursor="send">Email</a>
+      <a href="tel:+919773168525" data-cursor="call">Phone</a>
+      <a href="req/Yuvrajsinh_CV.pdf" target="_blank" rel="noopener" download="Yuvrajsinh_CV.pdf" data-cursor="cv">Download CV</a>
+      <a href="#hero" data-cursor="top">Back to top ↑</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js" defer></script>
+<script src="req/js/preloader.js" defer></script>
+<script src="req/js/main.js" defer></script>
+<script src="req/js/cursor.js" defer></script>
+</body>
+</html>
